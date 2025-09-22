@@ -4,7 +4,6 @@ Match balanced string pairs, like `{` and `}` or `<b>` and `</b>`. Supports regu
 
 [![build status](https://secure.travis-ci.org/juliangruber/balanced-match.svg)](http://travis-ci.org/juliangruber/balanced-match)
 [![downloads](https://img.shields.io/npm/dm/balanced-match.svg)](https://www.npmjs.org/package/balanced-match)
-
 [![testling badge](https://ci.testling.com/juliangruber/balanced-match.png)](https://ci.testling.com/juliangruber/balanced-match)
 
 ## Example
@@ -36,8 +35,7 @@ $ node example.js
 
 ### var m = balanced(a, b, str)
 
-For the first non-nested matching pair of `a` and `b` in `str`, return an
-object with those keys:
+For the first non-nested matching pair of `a` and `b` in `str`, return an object with these keys:
 
 * **start** the index of the first match of `a`
 * **end** the index of the matching `b`
@@ -47,12 +45,11 @@ object with those keys:
 
 If there's no match, `undefined` will be returned.
 
-If the `str` contains more `a` than `b` / there are unmatched pairs, the first match that was closed will be used. For example, {% raw %}`{{a}`{% endraw %} will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}'][...]
+If the `str` contains more `a` than `b` / there are unmatched pairs, the first match that was closed will be used. For example, {% raw %}`{{a}`{% endraw %} will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}']`.
 
 ### var r = balanced.range(a, b, str)
 
-For the first non-nested matching pair of `a` and `b` in `str`, return an
-array with indexes: `[ <a index>, <b index> ]`.
+For the first non-nested matching pair of `a` and `b` in `str`, return an array with indexes: `[ <a index>, <b index> ]`.
 
 If there's no match, `undefined` will be returned.
 
@@ -76,7 +73,7 @@ Tidelift will coordinate the fix and disclosure.
 
 (MIT)
 
-Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+Copyright (c) 2013 Julian Gruber <julian@juliangruber.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
